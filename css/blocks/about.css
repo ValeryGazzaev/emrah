@@ -1,0 +1,53 @@
+.about {
+	position: relative;
+	background-color: #524664;
+}
+
+.about .circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 369px;
+	height: 369px;
+	box-shadow: inset 0 0 0 5px #ffd670;
+	border-radius: 50%;
+}
+
+.about .circle::after {
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 246px;
+	height: 246px;
+	border-radius: 50%;
+	background-color: #ffd670;
+}
+
+.about-promo {
+	max-width: 260px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.about-content {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-content .about-who-block {
+	max-width: 510px;
+}
+
+.about-social a:nth-child(1)::after,
+.about-social a:nth-child(3)::after {
+	display: none;
+}
+
