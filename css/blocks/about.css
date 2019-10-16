@@ -1,17 +1,20 @@
 .about {
 	position: relative;
 	background-color: #524664;
+	padding: 104px 0 109px;
+	color: #c4c0cf;
 }
 
 .about .circle {
 	position: absolute;
-	top: 50%;
+	top: 65%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 369px;
 	height: 369px;
 	box-shadow: inset 0 0 0 5px #ffd670;
 	border-radius: 50%;
+	z-index: 10;
 }
 
 .about .circle::after {
@@ -27,9 +30,15 @@
 }
 
 .about-promo {
+	position: relative;
 	max-width: 260px;
 	text-align: center;
 	margin: 0 auto;
+	z-index: 9;
+}
+
+.about-promo p:nth-child(3) {
+	color: #d0c6db;
 }
 
 .about-content {
@@ -40,10 +49,24 @@
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	margin-top: 100px;
 }
 
 .about-content .about-who-block {
 	max-width: 510px;
+}
+
+.about-who-block .step-title {
+	margin-bottom: 40px;
+}
+
+.about-who-block p:nth-child(4) {
+	margin: 36px auto 24px;
+}
+
+.about-social {
+	width: 175px;
+	margin-left: 10px !important;
 }
 
 .about-social a:nth-child(1)::after,
@@ -51,3 +74,43 @@
 	display: none;
 }
 
+.about-skills-block {
+	width: 34.4%;
+}
+
+.graph p {
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	font-size: 13px;
+	vertical-align: middle;
+	border-radius: 4px;
+	letter-spacing: 0.53px;
+	background-color: #615474;
+	text-indent: 20px;
+}
+
+.graph p span {
+	position: absolute;
+	right: 5%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	color: #4f4b58;
+}
+
+.graph p span:nth-child(2) {
+	right: 55%;
+}
+
+.graph p:nth-child(2) {
+	margin: 16px 0;
+}
+
+.graph p::before {
+	position: absolute;
+	content: "";
+}
