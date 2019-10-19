@@ -1,20 +1,20 @@
 .about {
 	position: relative;
 	background-color: #524664;
-	padding: 104px 0 109px;
+	padding: 104px 0 111px;
 	color: #c4c0cf;
 }
 
 .about .circle {
 	position: absolute;
-	top: 65%;
+	top: 63.9%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 369px;
 	height: 369px;
 	box-shadow: inset 0 0 0 5px #ffd670;
 	border-radius: 50%;
-	z-index: 10;
+	z-index: 9;
 }
 
 .about .circle::after {
@@ -49,19 +49,29 @@
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
-	margin-top: 100px;
+	margin-top: 91px;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	color: #c4c0cf;
 }
 
 .about-content .about-who-block {
+	position: relative;
 	max-width: 510px;
+	z-index: 10;
 }
 
 .about-who-block .step-title {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
+}
+
+.about-who-block p {
+	letter-spacing: 0.6px;
 }
 
 .about-who-block p:nth-child(4) {
-	margin: 36px auto 24px;
+	margin: 30px auto -21px;
 }
 
 .about-social {
@@ -166,9 +176,87 @@
 }
 
 .disign-block .d-s-title {
-	margin: 25px 0 18px;
+	margin: 25px 0 17px;
 }
 
 .coding-block .c-s-title {
 	margin: 19px 0 18px;
+}
+
+@media (max-width: 1310px) {
+	.about-content {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		margin-top: 91px;
+	}
+	.about-content .about-who-block {
+		max-width: 90%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.about-social {
+		margin-left: 0;
+		margin: 0 auto;
+	}
+	.about-who-block p:nth-child(4) {
+		margin: 30px auto 30px;
+	}
+	.about .circle {
+		opacity: 0.2;
+	}
+	.about-skills-block {
+		width: 70%;
+		margin: 0 auto;
+	}
+	.about-skills-block .step-title {
+		width: 120px;
+		margin: 0 auto;
+		margin-top: 60px;
+		text-indent: 10px;
+	}
+}
+
+@media (max-width: 700px) {
+	.about-skills-block {
+		width: 90%;
+	}
+}
+
+@media (max-width: 510px) {
+	.about-skills-block {
+		width: 90%;
+	}
+	[class^="disign-inner"] div span {
+		left: 92% !important;
+		color: #fff;
+	}
+}
+
+@media (max-width: 370px) {
+	.about .circle {
+	position: absolute;
+	top: 63.9%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 240px;
+	max-height: 240px;
+	box-shadow: inset 0 0 0 5px #ffd670;
+	border-radius: 50%;
+	z-index: 9;
+}
+.about .circle::after {
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	background-color: #ffd670;
+}
+
 }
