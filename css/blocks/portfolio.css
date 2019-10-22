@@ -179,10 +179,20 @@
 }
 
 .portfolio-slider-slides .slides {
+	position: relative;
 	width: 970px;
 	height: 683px;
 	background-color: #5c5766;
 	/* background-image: url("../../img/Layer 48.png"); */
+}
+
+[class^="cross-"] {
+	position: absolute;
+	top: 22px;
+	right: 17px;
+	width: 18px;
+	height: 18px;
+	background-image: url("../../img/cross.png");
 }
 
 .portfolio-slider-inner {
@@ -250,11 +260,12 @@
 	display: flex;
 	justify-content: space-between;
 	max-width: 635px;
-	margin: 62px auto;
+	margin: 61px auto;
 }
 
 .portfolio-nav a {
 	position: relative;
+	outline: none;
 	text-transform: uppercase;
 	font-size: 12px;
 	line-height: 30px;
@@ -277,4 +288,56 @@
 
 .portfolio-nav a:active::before {
 	background-color: #eee;
+}
+
+.rhombs {
+	position: relative;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.rhombs [class^="rhomb-"] {
+	position: relative;
+	width: 365px;
+	height: 342px;
+}
+
+.rhombs [class^="rhomb-"]::before  {
+	position: absolute;
+	content: "";
+	width: 250px;
+	height: 250px;
+	background-color: #fff;
+	border-radius: 15px;
+	left: 50%;
+	transform-origin: 0 0; 
+	transform: rotate(45deg);
+}
+
+.rhombs .inner-rhomb {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 240px;
+	text-align: center;
+	z-index: 10;
+	display: none;
+}
+
+.rhombs [class^="rhomb-"]:hover::before {
+	background-color: #5c5766;
+}  
+
+.rhombs [class^="rhomb-"]:hover .inner-rhomb {
+	display: block;
 }
