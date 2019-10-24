@@ -284,6 +284,7 @@
 
 .portfolio-nav a:active {
 	color: #eee;
+	box-shadow: inset 0 0 1px 1px #eee;
 }
 
 .portfolio-nav a:active::before {
@@ -291,7 +292,6 @@
 }
 
 .rhombs {
-	position: relative;
 	-webkit-flex-wrap: wrap;
 	-moz-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
@@ -325,7 +325,7 @@
 
 .rhombs .inner-rhomb {
 	position: absolute;
-	top: 50%;
+	top: 61%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 240px;
@@ -334,10 +334,74 @@
 	display: none;
 }
 
+.rhombs .inner-rhomb p:nth-child(1) {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: 0.64px; 
+	margin-bottom: 5px;
+}
+
+.rhombs .inner-rhomb p:nth-child(2) {
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 0.52px;
+	margin-bottom: 15px; 
+}
+
 .rhombs [class^="rhomb-"]:hover::before {
 	background-color: #5c5766;
 }  
 
 .rhombs [class^="rhomb-"]:hover .inner-rhomb {
 	display: block;
+}
+
+.rhombs [class^="rhomb-"]:nth-child(n+5) {
+	margin-top: -95px;
+}
+
+.rhombs [class^="rhomb-"] .plus_btn {
+	position: relative;
+	display: block;
+	width: 65px;
+	height: 65px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	background-color: rgba(225, 68, 20, 0.72);
+}
+
+.rhombs [class^="rhomb-"] .plus_btn::after,
+.rhombs [class^="rhomb-"] .plus_btn::before {
+	position: absolute;
+	content: "";
+	width: 23px;
+	height: 5px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;	
+}
+
+.rhombs [class^="rhomb-"] .plus_btn::after {
+	width: 5px;
+	height: 23px;
+}
+
+@media (max-width: 1490px) {
+	.portfolio-content {
+		-webkit-flex-direction: column-reverse;
+		-moz-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-o-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		margin-top: 60px;
+	}
+	.portfolio-slider {
+		left: 50%;
+		transform: translateX(-50%);
+		margin-bottom: 60px;
+	}
 }
