@@ -36,7 +36,8 @@ a {
 	content: "";
 	left: 50%;
 	bottom: -21px;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	width: 88px;
 	height: 3px;
 	background-color: #736588;

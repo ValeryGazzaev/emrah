@@ -9,6 +9,7 @@
 	position: absolute;
 	top: 63.9%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	width: 369px;
 	height: 369px;
@@ -22,6 +23,7 @@
 	content: "";
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	width: 246px;
 	height: 246px;
@@ -43,11 +45,12 @@
 
 .about-content {
 	width: 100%;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
+	-webkit-box-pack: justify;
 	justify-content: space-between;
 	margin-top: 91px;
 	font-weight: 300;
@@ -113,6 +116,7 @@
 [class^="disign-inner"] div span {
 	position: absolute;
 	left: 92%;
+	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	display: inline-block;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -185,10 +189,10 @@
 
 @media (max-width: 1310px) {
 	.about-content {
-		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
-		-ms-flex-direction: column;
 		-o-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
 		flex-direction: column;
 		margin-top: 91px;
 	}
@@ -237,26 +241,29 @@
 
 @media (max-width: 370px) {
 	.about .circle {
-	position: absolute;
-	top: 63.9%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 240px;
-	max-height: 240px;
-	box-shadow: inset 0 0 0 5px #ffd670;
-	border-radius: 50%;
-	z-index: 9;
-}
-.about .circle::after {
-	position: absolute;
-	content: "";
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 170px;
-	height: 170px;
-	border-radius: 50%;
-	background-color: #ffd670;
-}
+		position: absolute;
+		top: 63.9%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: 240px;
+		max-height: 240px;
+		box-shadow: inset 0 0 0 5px #ffd670;
+		border-radius: 50%;
+		z-index: 9;
+	}
+
+	.about .circle::after {
+		position: absolute;
+		content: "";
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: 170px;
+		height: 170px;
+		border-radius: 50%;
+		background-color: #ffd670;
+	}
 
 }

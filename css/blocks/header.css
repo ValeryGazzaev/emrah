@@ -4,11 +4,12 @@
 
 .header-nav {
 	width: 63%;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
+	-webkit-box-pack: justify;
 	justify-content: space-between;
 	margin: 0 auto;
 }
@@ -27,6 +28,7 @@
 }
 
 .header-nav a:active {
+	-webkit-transform: scale(0.98);
 	transform: scale(0.98);
 	color: #ffd670;
 }
@@ -68,11 +70,12 @@
 
 .social {
 	width: 200px;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
+	-webkit-box-pack: justify;
 	justify-content: space-between;
 	margin: 0 auto;
 	margin-top: 52px;
@@ -90,6 +93,7 @@
 	content: "";
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	width: 48px;
 	height: 48px;
@@ -106,6 +110,7 @@
 	position: absolute;
 	content: "";
 	top: 50%;
+	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	left: -99px;
 	width: 87px;
@@ -135,11 +140,12 @@
 
 .header-promo-state {
 	width: 69%;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
+	-webkit-box-pack: justify;
 	justify-content: space-between;
 	margin: 0 auto;
 	margin-top: 168px;
@@ -167,10 +173,10 @@
 
 @media (max-width: 768px) {
 	.header-promo-state {
-		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
-		-ms-flex-direction: column;
 		-o-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
 		flex-direction: column;
 	}
 	.header-promo-text p:nth-child(2) {
