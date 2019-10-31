@@ -35,11 +35,126 @@
 	margin-top: 98px;
 }
 
+/* left side */
+
 .blog-top-left {
 	flex-basis: 66.8%;
 	margin-right: 30px;
+	color: #898d9d;
 }
 
 .blog-top-aside {
 	flex-basis: calc(100% - 66.8% - 30px);
+}
+
+
+.left-block-title-1 {
+	font-size: 24px;
+	line-height: 37px;
+	font-weight: 700;
+	letter-spacing: 0.94px;
+	color: #373c4f;
+	margin: 15px 0 15px;
+}
+
+.blog-top-left .date {
+	text-transform: uppercase;
+	font-size: 11px;
+	font-style: italic;
+	letter-spacing: 0.44px;
+	color: #c4c0cf;
+}
+
+.blog-top-text {
+	font-weight: 300;
+}
+
+.blog-top-text p:nth-child(1) {
+	margin: 5px 0 40px;
+}
+
+.blog-top-tags {
+	border-top: 1px solid #f4f4f4;
+	border-bottom: 1px solid #f4f4f4;
+	padding: 23px 0;
+	margin: 20px 0 40px;
+}
+
+.blog-top-tags p {
+	text-transform: uppercase;
+}
+
+.blog-top-tags p a {
+	text-transform: none;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 30px;
+	color: #898d9d;
+}
+
+.blog-top-tags p a:hover {
+	color: #ffd670;
+}
+
+.blog-top-tags p a:active {
+	color: #898d9d;
+}
+
+.comments-blog p:nth-child(1) {
+	text-transform: uppercase;
+}
+
+.comment {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #f4f4f4;
+	padding: 45px 0 34px;
+}
+
+.comment .com-photo {
+	margin-right: 20px;
+}
+
+.comment .comment-txt {
+	max-width: 590px;
+	margin-top: -11px;
+}
+
+.comment .comment-txt p:nth-child(1) {
+	text-transform: capitalize;
+	color: #ffdb83;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 30px;
+} 
+
+.comment .comment-txt p:nth-child(2) {
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 300;
+	line-height: 22px;
+	color: #c4c0cf;
+	margin-bottom: 5px;
+}
+
+.comment .comment-txt .orange {
+	text-transform: uppercase;
+}
+
+.comment .comment-txt p:nth-child(3) {
+	font-size: 13px;
+	line-height: 25px;
+	letter-spacing: 0.52px;
+	font-weight: 300;
+	color: #898d9d;
+} 
+
+.comments-blog .com-2 {
+	width: 86.6%;
+	padding-left: 90px;
 }
