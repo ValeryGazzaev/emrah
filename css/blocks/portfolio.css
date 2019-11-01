@@ -391,7 +391,7 @@
 	height: 23px;
 }
 
-@media (max-width: 1539px) {
+@media (max-width: 1560px) {
 	.rhombs [class^="rhomb-"] {
 		margin-top: 20px !important;
 	}
