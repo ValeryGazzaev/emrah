@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
-	$('.blog-btn').mousedown(function(){
-	$('.blog-slider').draggable();
+	$('.search-wrap .fas').click(function(){
+		$('.search-line').val('');
 	});
 });
-	
+
