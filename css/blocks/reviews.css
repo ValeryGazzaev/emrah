@@ -1,0 +1,102 @@
+.reviews {
+	background-color: #5c5766;
+	padding: 99px 0 183px;
+}
+
+.reviews-logo {
+	width: 100px;
+	margin: 0	auto;
+	margin-bottom: 27px;
+}
+
+.reviews-slider {
+	position: relative;
+	width: 1500px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.reviews-slider input {
+	display: none;
+}
+
+.reviews-slider-inner {
+	overflow-x: hidden;
+}
+
+.reviews-slider-slides {
+	width: 300%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	transition: all 1s ease;
+}
+
+.reviews-slider-slides [class^="slide-"] {
+	width: 1500px;
+	text-align: center;
+}
+
+.reviews-slider-slides [class^="slide-"] p:nth-child(1),
+.reviews-slider-slides [class^="slide-"] p:nth-child(2) {
+	font-size: 19px;
+	line-height: 53px;
+	font-weight: 300;
+	color: #fff;
+}
+
+.reviews-slider-slides [class^="slide-"] p:nth-child(2) {
+	font-weight: 700;
+}
+
+.reviews-slider-controls {
+	position: absolute;
+	width: 120px;
+	bottom: -41px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	left: 50%;
+	transform: translateX(-50%);
+}
+/* left arrow */
+#reviews-btn-1:checked ~ .reviews-slider-controls label:nth-child(3),
+#reviews-btn-2:checked ~ .reviews-slider-controls label:nth-child(1),
+#reviews-btn-3:checked ~ .reviews-slider-controls label:nth-child(2) {
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 38px;
+	height: 38px;
+	background-image: url("../../img/scroll.png");
+	z-index: 10;
+}
+/* right arrow */
+#reviews-btn-1:checked ~ .reviews-slider-controls label:nth-child(2),
+#reviews-btn-2:checked ~ .reviews-slider-controls label:nth-child(3),
+#reviews-btn-3:checked ~ .reviews-slider-controls label:nth-child(1) {
+	position: absolute;
+	display: block;
+	right: 0;
+	width: 38px;
+	height: 38px;
+	transform: scaleX(-1);
+	background-image: url("../../img/scroll.png");
+	z-index: 10;
+}
+
+#reviews-btn-1:checked ~ .reviews-slider-inner .reviews-slider-slides {
+	transform: translateX(0);
+}
+#reviews-btn-2:checked ~ .reviews-slider-inner .reviews-slider-slides {
+	transform: translateX(-1500px);
+}
+#reviews-btn-3:checked ~ .reviews-slider-inner .reviews-slider-slides {
+	transform: translateX(-3000px);
+}

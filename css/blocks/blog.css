@@ -687,9 +687,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 		-webkit-transform: scaleX(-1);
 		transform: scaleX(-1);
 	}
+	
 	.blog-slider-btn-slick {
 		display: none;
 	}
+
 	.blog-slider-slides .blog-slides {
 		width: 347px;
 		margin-right: 5px;
