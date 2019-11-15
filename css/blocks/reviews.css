@@ -100,3 +100,10 @@
 #reviews-btn-3:checked ~ .reviews-slider-inner .reviews-slider-slides {
 	transform: translateX(-3000px);
 }
+
+@media (max-width: 840px) {
+	[class^="slide-"] p:nth-child(1) {
+		width: 100vw;
+		margin: 0 auto;
+	}
+}

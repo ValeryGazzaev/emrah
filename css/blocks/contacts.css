@@ -1,0 +1,46 @@
+.contacts {
+	text-align: center;
+	padding: 98px 0 68px;
+}
+
+.contacts-promo {
+	position: relative;
+	max-width: 260px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.contacts-promo .title {
+	color: #5b6074;
+}
+
+.contacts-l-t {
+	max-width: 650px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.contacts-l-t [class^="round-"] {
+	width: 65px;
+	height: 65px;
+	background-image: url("../../img/c-inon.png");
+}
+
+.contacts-l-t .round-tel {
+	background-position: -68px 0;
+} 
+
+.contacts-l-t p:nth-child(2),
+.contacts-l-t a {
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 30px;
+	color: #a5aabe;
+}
