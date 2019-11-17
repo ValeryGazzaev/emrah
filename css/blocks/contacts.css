@@ -1,6 +1,6 @@
 .contacts {
 	text-align: center;
-	padding: 98px 0 68px;
+	padding: 86px 0 71px;
 }
 
 .contacts-promo {
@@ -8,6 +8,10 @@
 	max-width: 260px;
 	text-align: center;
 	margin: 0 auto;
+}
+
+.contacts-promo .title::before {
+	background-color: #dbdde5;
 }
 
 .contacts-promo .title {
@@ -24,7 +28,8 @@
 	justify-content: space-between;
 	-ms-align-items: center;
 	align-items: center;
-	margin: 0 auto;
+	margin: 65px auto 59px;
+
 }
 
 .contacts-l-t [class^="round-"] {
@@ -36,11 +41,127 @@
 .contacts-l-t .round-tel {
 	background-position: -68px 0;
 } 
-
-.contacts-l-t p:nth-child(2),
+.contacts-l-t span,
 .contacts-l-t a {
+	font-family: 'Roboto Slab', 'Arial', serif;
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 30px;
 	color: #a5aabe;
+}
+
+.contacts-l-t a:hover {
+	text-decoration: underline;
+}
+
+.contacts-l-t a:active {
+	
+}
+
+.contacts-l-t span {
+	text-indent: -15px;
+}
+
+.send-me {
+	width: 890px;
+	margin: 0 auto;
+}
+
+.send-top {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.send-me textarea,
+.send-top input {
+	position: relative;
+	width: 48.2%;
+	height: 58px;
+	border:none;
+	outline: none;
+	background-color: #f8f8f8;
+	border-radius: 5px;
+	text-indent: 30px;
+	color: #cacaca;
+}
+
+.send-me textarea {
+	position: relative;
+	width: 100%;
+	height: 187px;
+	resize: none;
+	margin: 39px 0 31px;
+	padding-top: 16px;
+}
+
+.send-me textarea::placeholder,
+.send-me input::placeholder {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 300;
+	font-family: 'Roboto Slab', 'Arial', serif;
+	color: #cacaca;
+}
+
+.send-me textarea:focus::placeholder,
+.send-me input:focus::placeholder {
+	font-size: 0;
+}
+
+.send-me .send-btn {
+	width: 273px;
+	height: 65px;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.72px;
+	font-weight: 700;
+	font-family: 'Roboto Slab', 'Arial', serif;
+	text-indent: 0;
+	border-radius: 3px;
+	background-color: #ffd670;
+	outline: none;
+	border: none;
+	color: #fff;
+}
+
+.send-me .send-btn:hover {
+	background-color: #f3f3f3;
+	color: #aaaaaa;
+}
+
+.send-me .send-btn:active {
+	background-color: #f3f3f3;
+	color: #aaaaaa;
+}
+
+.copyright {
+	position: relative;
+	border-top: 1px solid #f3f3f3;
+	padding: 27px 0 32px;
+}
+
+.copyright p {
+	width: 500px;
+	font-size: 13px;
+	line-height: 30px;
+	letter-spacing: 0.52px;
+	font-weight: 300;
+	margin: 0 auto;
+}
+
+.copyright p a {
+	color: #aaaaaa;
+}
+
+.copyright p a:hover {
+	text-decoration: underline;
+}
+
+.copyright p a:active {
+	color: #ffd670;
 }
