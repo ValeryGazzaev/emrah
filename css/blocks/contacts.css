@@ -29,7 +29,6 @@
 	-ms-align-items: center;
 	align-items: center;
 	margin: 65px auto 59px;
-
 }
 
 .contacts-l-t [class^="round-"] {
@@ -55,7 +54,7 @@
 }
 
 .contacts-l-t a:active {
-	
+	color: #f8f8f8;
 }
 
 .contacts-l-t span {
@@ -146,12 +145,11 @@
 }
 
 .copyright p {
-	width: 500px;
 	font-size: 13px;
 	line-height: 30px;
 	letter-spacing: 0.52px;
 	font-weight: 300;
-	margin: 0 auto;
+	text-align: center;
 }
 
 .copyright p a {
@@ -164,4 +162,44 @@
 
 .copyright p a:active {
 	color: #ffd670;
+}
+
+@media (max-width: 1040px) {
+	.send-me {
+		width: 100%;
+	}
+}
+
+@media (max-width: 700px) {
+	.contacts-l-t {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		margin: 30px auto;
+	}
+	.contacts-l-t a {
+		margin-bottom: 20px !important;
+	}
+}
+
+
+@media (max-width: 540px) {
+	.send-me .send-top {
+		-moz-flex-direction: column;
+		-o-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		flex-direction: column;
+	}
+	.send-top input {
+		margin-bottom: 20px;
+	}
+	.send-me textarea {
+		margin: 20px 0 31px;
+	}
+	.send-me input {
+		width: 100%;
+	}
 }
